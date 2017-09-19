@@ -1,0 +1,59 @@
+.fade-enter-active, .fade-leave-active
+  transition: opacity .5s
+.fade-enter, .fade-leave-to
+  opacity: 0
+
+.move-enter-to, .move-leave
+	opacity: 1
+	transform: translate3D(0, 0, 0) rotate(0)
+.move-enter, .move-leave-to
+	opacity: 0
+	transform: translate3D(24px, 0, 0) rotate(180deg)
+
+.fold-enter-active, .fold-leave-active
+  transition: all .4s linear
+.fold-enter-to, .fold-leave
+  transform: translate3D(0, 0, 0)
+.fold-enter, .fold-leave-to
+  transform: translate3D(0, 100%, 0)
+  
+.moveright-enter-active, .moveright-leave-active
+	transition: all .1s linear
+.moveright-enter-to, .moveright-leave
+	transform: translate3D(0, 0, 0)
+.moveright-enter, .moveright-leave-to
+	transform: translate3D(100%, 0, 0)
+
+
+
+// &.fold-enter, &.fold-leave
+//   opacity: 1
+//   transform: translate3d(24px, 0, 0) rotata(180)
+// &.fold-enter-active {
+//   animation-name: fold-in;
+//   animation-duration: .3s;
+// }
+// &.fold-leave-active {
+//   animation-name: fold-out;
+//   animation-duration: .3s;
+// }
+// @keyframes fold-in {
+//   0% {
+//     opacity: 0
+//     transform: translate3d(24px, 0, 0) rotate(180deg)
+//   }
+//   100% {
+//     opacity: 1
+//     transform: translate3d(0, 0, 0) rotate(0)
+//   }
+// }
+// @keyframes fold-out {
+//   0% {
+//     opacity: 1
+//     transform: translate3d(0, 0, 0) rotate(0)
+//   }
+//   100% {
+//     opacity: 0
+//     transform: translate3d(24px, 0, 0) rotate(180deg)
+//   }
+// }
